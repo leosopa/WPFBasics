@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
+using SopaAPI.Model;
 
-namespace SopaAPI.Model
+namespace SopaAPI.Data
 {
     public class SoapAPIDbContext : DbContext
     {

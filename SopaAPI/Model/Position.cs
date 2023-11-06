@@ -1,9 +1,8 @@
 ﻿namespace SopaAPI.Model
 {
-    public class Position
+    public class Position : BaseEntity
     {
 
-        public int Id { get; set; }
         public string Name { get; set; }
 
         public ICollection<Person> Persons { get; set; }

@@ -3,10 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SopaAPI.Model
 {
-    public class PersonDetails
+    public class PersonDetails : BaseEntity
     {
-        [Key]
-        public int Id { get; set; }
 
         public string City { get; set; }
         public DateTime Birthday { get; set; }

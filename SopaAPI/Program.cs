@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using SopaAPI.Model;
+using SopaAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SopaAPI.Data;
 
@@ -11,9 +12,11 @@ using SopaAPI.Data;
 namespace SopaAPI.Migrations
 {
     [DbContext(typeof(SoapAPIDbContext))]
-    partial class SoapAPIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231106001935_UpdateModel")]
+    partial class UpdateModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -3,14 +3,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SopaAPI.Model
 {
-    public class Person
+    public class Person : BaseEntity
     {
         public Person()
         {
         }
 
-        [Key]
-        public int Id { get; set; }
+        
         [Required]
         public string Name { get; set; }
         [Required]

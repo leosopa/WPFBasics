@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GstZlVC3L5atSFv9CoHI2q0j1O9E52kBxqToHX5QkzGdybdX6uEbLFo289Hk4O2aBfkoKWEQF/99quDqFlR5GQ==",
+  "dgSpecHash": "6VvJwT9UocMIvt7kwHSVgZKSqPc5ZHRoOz/9RNxV9nS3d3wm8tew65nH8aVnHnyw5d2i5XgAg3Sb+zqKydvX8w==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\WPFProject\\SopaAPI\\SopaAPI.csproj",
+  "projectFilePath": "C:\\Projetos\\WPFBasics\\SopaAPI\\SopaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leoso\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\leoso\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

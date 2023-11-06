@@ -3323,11 +3323,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\WPFProject\\SopaAPI\\SopaAPI.csproj",
+      "projectUniqueName": "C:\\Projetos\\WPFBasics\\SopaAPI\\SopaAPI.csproj",
       "projectName": "SopaAPI",
-      "projectPath": "C:\\Projetos\\WPFProject\\SopaAPI\\SopaAPI.csproj",
+      "projectPath": "C:\\Projetos\\WPFBasics\\SopaAPI\\SopaAPI.csproj",
       "packagesPath": "C:\\Users\\leoso\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\WPFProject\\SopaAPI\\obj\\",
+      "outputPath": "C:\\Projetos\\WPFBasics\\SopaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leoso\\AppData\\Roaming\\NuGet\\NuGet.Config",
