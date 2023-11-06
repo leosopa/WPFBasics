@@ -23,9 +23,19 @@ namespace SopaAPI.Services
             return _repository.GetById(id);
         }
 
-        public void Save(TEntity obj)
+        public bool Save(TEntity obj)
         {
-            _repository.Save(obj);
+            return _repository.Save(obj);
+        }
+
+        public bool Update(TEntity obj)
+        {
+            return _repository.Update(obj);
+        }
+
+        public bool Delete(int id)
+        {
+            return _repository.Delete(id);
         }
 
     }
