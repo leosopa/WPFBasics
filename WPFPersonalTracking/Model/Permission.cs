@@ -3,9 +3,8 @@ using System.Collections.Generic;
 
 namespace WPFPersonalTracking.Model;
 
-public partial class Permission
+public partial class Permission : BaseModel
 {
-    public int Id { get; set; }
 
     public DateTime StartDate { get; set; }
 

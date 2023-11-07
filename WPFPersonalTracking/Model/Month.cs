@@ -3,9 +3,8 @@ using System.Collections.Generic;
 
 namespace WPFPersonalTracking.Model;
 
-public partial class Month
+public partial class Month : BaseModel
 {
-    public int Id { get; set; }
 
     public string Name { get; set; } = null!;
 

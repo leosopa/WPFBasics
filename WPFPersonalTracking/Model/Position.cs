@@ -3,10 +3,8 @@ using System.Collections.Generic;
 
 namespace WPFPersonalTracking.Model;
 
-public partial class Position
+public partial class Position : BaseModel
 {
-    public int Id { get; set; }
-
     public string Name { get; set; } = null!;
 
     public int DepartmentId { get; set; }
