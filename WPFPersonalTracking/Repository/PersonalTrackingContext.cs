@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using WPFPersonalTracking.Model;
 
 namespace WPFPersonalTracking.Repository;
 
@@ -23,7 +24,7 @@ public partial class PersonalTrackingContext : DbContext
 
     public virtual DbSet<Permission> Permissions { get; set; }
 
-    public virtual DbSet<Permissionstate> Permissionstates { get; set; }
+    public virtual DbSet<PermissionState> Permissionstates { get; set; }
 
     public virtual DbSet<Position> Positions { get; set; }
 
@@ -31,7 +32,7 @@ public partial class PersonalTrackingContext : DbContext
 
     public virtual DbSet<Task> Tasks { get; set; }
 
-    public virtual DbSet<Taskstate> Taskstates { get; set; }
+    public virtual DbSet<TaskState> Taskstates { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
@@ -112,7 +113,7 @@ public partial class PersonalTrackingContext : DbContext
                 .HasConstraintName("FK_PERMISSION_PERMISSIONSTATE");
         });
 
-        modelBuilder.Entity<Permissionstate>(entity =>
+        modelBuilder.Entity<PermissionState>(entity =>
         {
             entity.ToTable("PERMISSIONSTATE");
 
@@ -181,7 +182,7 @@ public partial class PersonalTrackingContext : DbContext
                 .HasConstraintName("FK_TASK_TASKSTATE");
         });
 
-        modelBuilder.Entity<Taskstate>(entity =>
+        modelBuilder.Entity<TaskState>(entity =>
         {
             entity.ToTable("TASKSTATE");
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WPFPersonalTracking.Repository;
+namespace WPFPersonalTracking.Model;
 
 public partial class Task
 {
@@ -21,5 +21,5 @@ public partial class Task
 
     public virtual Employee Employee { get; set; } = null!;
 
-    public virtual Taskstate StateNavigation { get; set; } = null!;
+    public virtual TaskState StateNavigation { get; set; } = null!;
 }

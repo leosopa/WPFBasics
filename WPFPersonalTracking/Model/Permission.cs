@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WPFPersonalTracking.Repository;
+namespace WPFPersonalTracking.Model;
 
 public partial class Permission
 {
@@ -21,5 +21,5 @@ public partial class Permission
 
     public virtual Employee Employee { get; set; } = null!;
 
-    public virtual Permissionstate StateNavigation { get; set; } = null!;
+    public virtual PermissionState StateNavigation { get; set; } = null!;
 }

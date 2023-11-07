@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WPFPersonalTracking.Repository;
+namespace WPFPersonalTracking.Model;
 
 public partial class Month
 {

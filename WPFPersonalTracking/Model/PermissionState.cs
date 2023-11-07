@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WPFPersonalTracking.Repository;
+namespace WPFPersonalTracking.Model;
 
-public partial class Permissionstate
+public partial class PermissionState
 {
     public int Id { get; set; }
 

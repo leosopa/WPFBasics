@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WPFPersonalTracking.Repository;
+namespace WPFPersonalTracking.Model;
 
-public partial class Taskstate
+public partial class TaskState
 {
     public int Id { get; set; }
 
