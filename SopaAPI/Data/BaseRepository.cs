@@ -4,7 +4,7 @@ namespace SopaAPI.Data
 {
     public class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
     {
-        private readonly SoapAPIDbContext _context;
+        protected readonly SoapAPIDbContext _context;
 
         public BaseRepository(SoapAPIDbContext context)
         {

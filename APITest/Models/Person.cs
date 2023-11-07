@@ -17,6 +17,11 @@ namespace APITest.Models
         [Required]
         public int Age { get; set; }
         public int PositionId { get; set; }
+        public Position Position { get; set; }
         public int SalaryId { get; set;}
+        public Salary Salary { get; set; }
+
+        public int PersonDetailsId { get; set; }
+        public PersonDetails Details { get; set; }
     }
 }

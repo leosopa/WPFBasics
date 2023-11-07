@@ -4,6 +4,6 @@
     {
 
         public int Id { get; set; }
-        public int Ammount { get; set; }
+        public int Amount { get; set; }
     }
 }

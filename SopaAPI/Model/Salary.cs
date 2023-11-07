@@ -1,4 +1,6 @@
-﻿namespace SopaAPI.Model
+﻿using System.Text.Json.Serialization;
+
+namespace SopaAPI.Model
 {
     public class Salary : BaseEntity
     {
@@ -8,7 +10,7 @@
              Persons = new HashSet<Person>();
         }
         public int Amount { get; set; }
-
+        [JsonIgnore]
         public virtual ICollection<Person> Persons { get; set; }   
     }
 }

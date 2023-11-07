@@ -25,6 +25,13 @@ namespace SopaAPI.Controllers
             return Ok(persons);
         }
 
+        [HttpGet("GetFullPersons")]
+        public IActionResult GetFullPersons()
+        {
+            var persons = _personService.GetFullPersonList();
+            return Ok(persons);
+        }
+
         [HttpPost]
         public IActionResult Add(Person person) 
         { 

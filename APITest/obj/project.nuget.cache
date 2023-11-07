@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ej7+1Z0BAig5qjpsb6QgNGF+dfjc0tx21ZNpfHadr74QXQkxH0OhmebygwfAbSHsrN17g0aLssC4/8ivyREHeQ==",
+  "dgSpecHash": "lOOXg0OSeMJMYkFe0y5tA8MHavtYSbPm2+7IfCV5YcHfNhDYjAZwIx33Ejkm/ijQyOIkPwjNGor+PgMF9SmSgQ==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\WPFProject\\APITest\\APITest.csproj",
+  "projectFilePath": "C:\\Projetos\\WPFBasics\\APITest\\APITest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leoso\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\leoso\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

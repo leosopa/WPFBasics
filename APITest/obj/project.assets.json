@@ -11133,11 +11133,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\WPFProject\\APITest\\APITest.csproj",
+      "projectUniqueName": "C:\\Projetos\\WPFBasics\\APITest\\APITest.csproj",
       "projectName": "APITest",
-      "projectPath": "C:\\Projetos\\WPFProject\\APITest\\APITest.csproj",
+      "projectPath": "C:\\Projetos\\WPFBasics\\APITest\\APITest.csproj",
       "packagesPath": "C:\\Users\\leoso\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\WPFProject\\APITest\\obj\\",
+      "outputPath": "C:\\Projetos\\WPFBasics\\APITest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leoso\\AppData\\Roaming\\NuGet\\NuGet.Config",

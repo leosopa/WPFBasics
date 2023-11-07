@@ -11,5 +11,12 @@ namespace SopaAPI.Services
         {
 
         }
+
+        public List<Person> GetFullPersonList()
+        {
+            return ((PersonRepository)_repository).GetFullPersonList();
+
+        }
+
     }
 }

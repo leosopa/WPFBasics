@@ -122,16 +122,13 @@ namespace SopaAPI.Migrations
                     b.Property<int>("DepartamentId")
                         .HasColumnType("int");
 
-                    b.Property<int>("DepartmentId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DepartmentId");
+                    b.HasIndex("DepartamentId");
 
                     b.ToTable("Positions");
                 });
@@ -186,7 +183,7 @@ namespace SopaAPI.Migrations
                 {
                     b.HasOne("SopaAPI.Model.Department", "Department")
                         .WithMany("Positions")
-                        .HasForeignKey("DepartmentId")
+                        .HasForeignKey("DepartamentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
