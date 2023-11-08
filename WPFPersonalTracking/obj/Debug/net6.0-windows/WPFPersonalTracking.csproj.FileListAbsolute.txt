@@ -64,3 +64,10 @@ C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\refint\WPFPer
 C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\WPFPersonalTracking.pdb
 C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\WPFPersonalTracking.genruntimeconfig.cache
 C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\ref\WPFPersonalTracking.dll
+C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\View\Controls\DeparmentList.g.cs
+C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\View\Department.g.cs
+C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\View\Controls\DeparmentList.baml
+C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\View\Department.baml
+C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\View\Controls\DepartmentAdd.g.cs
+C:\Projetos\WPFBasics\WPFPersonalTracking\obj\Debug\net6.0-windows\View\Controls\DepartmentAdd.baml

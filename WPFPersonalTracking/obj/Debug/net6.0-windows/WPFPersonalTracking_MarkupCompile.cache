@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Projetos\WPFBasics\WPFPersonalTracking\App.xaml
-11407045341
+4137272622
 
-13573835067
+231726823493
 222-558632946
-MainWindow.xaml;
+MainWindow.xaml;View\Controls\DeparmentList.xaml;View\Controls\DepartmentAdd.xaml;View\Department.xaml;
 
 False
 

@@ -12,41 +12,41 @@ namespace WPFPersonalTracking.Services
     public class BaseService<TEntity> : IService<TEntity> where TEntity : BaseModel
     {
 
-        protected PersonalTrackingContext _dbContext;
+        protected PersonalTrackingContext DbContext { get; set; }
 
-        public BaseService(PersonalTrackingContext dbContext)
+        public BaseService()
         {
-            _dbContext = dbContext;
+            DbContext = new PersonalTrackingContext();
         }
 
         public bool Delete(int id)
         {
-            var entity = _dbContext.Set<TEntity>().FirstOrDefault(e => e.Id == id);
+            var entity = DbContext.Set<TEntity>().FirstOrDefault(e => e.Id == id);
 
             if (entity == null) 
                 return false;
             else
             {
-                _dbContext.Set<TEntity>().Remove(entity);
-                _dbContext.SaveChanges();
+                DbContext.Set<TEntity>().Remove(entity);
+                DbContext.SaveChanges();
                 return true;
             }
         }
 
         public List<TEntity> GetAll()
         {
-            return _dbContext.Set<TEntity>().ToList();
+            return DbContext.Set<TEntity>().ToList();
         }
 
         public TEntity GetById(int id)
         {
-            return _dbContext.Set<TEntity>().FirstOrDefault(e => e.Id == id);
+            return DbContext.Set<TEntity>().FirstOrDefault(e => e.Id == id);
         }
 
         public bool Save(TEntity entity)
         {
-            _dbContext.Set<TEntity>().Add(entity);
-            _dbContext.SaveChanges();
+            DbContext.Set<TEntity>().Add(entity);
+            DbContext.SaveChanges();
 
             if (entity.Id != 0)
                 return true;
@@ -56,12 +56,12 @@ namespace WPFPersonalTracking.Services
 
         public bool Update(TEntity entity)
         {
-            var oldEntity = _dbContext.Set<TEntity>().FirstOrDefault(e => e.Id == entity.Id);
+            var oldEntity = DbContext.Set<TEntity>().FirstOrDefault(e => e.Id == entity.Id);
 
             if (oldEntity != null)
             {
-                _dbContext.Set<TEntity>().Entry(entity).State = EntityState.Modified;
-                _dbContext.SaveChanges();
+                DbContext.Set<TEntity>().Entry(entity).State = EntityState.Modified;
+                DbContext.SaveChanges();
 
                 return true;
             }
