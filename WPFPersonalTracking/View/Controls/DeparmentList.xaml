@@ -9,7 +9,7 @@
     <Grid>
         <DataGrid x:Name="grdDepartment" IsReadOnly="true"
           AutoGenerateColumns="False" SelectionUnit="FullRow"
-                  ItemsSource="{Binding Departments}">
+                  ItemsSource="{Binding Departments}" SelectedValue="{Binding Department}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}" 
                             Visibility="Hidden"/>

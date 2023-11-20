@@ -93,7 +93,7 @@ namespace WPFPersonalTracking.View.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPFPersonalTracking;component/view/controls/departmentadd.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPFPersonalTracking;V1.0.0.0;component/view/controls/departmentadd.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\View\Controls\DepartmentAdd.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

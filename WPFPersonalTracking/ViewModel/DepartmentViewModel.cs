@@ -103,23 +103,69 @@ namespace WPFPersonalTracking.ViewModel
             }
         }
 
-        public ICommand AddCommand { get; }
+        public ICommand SaveCommand { get; }
+        public ICommand DeleteCommand { get; }
+
+        public ICommand UpdateCommand { get; }
 
         public DepartmentViewModel()
         {
             _service = new DepartmentService();
-            AddCommand = new RelayCommand(ExecuteAddCommand);
+            SaveCommand = new RelayCommand(ExecuteSaveCommand);
+            DeleteCommand = new RelayCommand(ExecuteDeleteCommand, f => IsCommandEnabled());
+            UpdateCommand = new RelayCommand(ExecuteUpdateCommand, f => IsCommandEnabled());
 
             this.Departments = _service.GetAll();
             this.Department = new Department();
         }
 
-        private void ExecuteAddCommand(object obj)
+        private void ExecuteUpdateCommand(object obj)
+        {
+            _service.Update(Department);
+
+            this.Department = new Department();
+            this.Departments = _service.GetAll();
+            DisableActions();
+        }
+
+        private bool IsCommandEnabled()
+        {
+            return this.Department.Id == 0 ? false : true;
+        }
+
+        private void ExecuteDeleteCommand(object obj)
+        {
+            if (this.Department.Id != 0) 
+            {
+
+                _service.Delete(Department.Id);
+
+                this.Department = new Department();
+                this.Departments = _service.GetAll();
+                DisableActions();
+
+            }
+        }
+
+        private void ExecuteSaveCommand(object obj)
         {
 
             _service.Save(Department);
+            this.Departments = _service.GetAll();
+            
             this.Department = new Department();
+            DisableActions();
 
         }
+
+        private void DisableActions()
+        {
+            this.IsListControlVisible = true;
+            this.IsAddVisible = true;
+            this.IsUpdateVisible = true;
+            this.IsDeleteVisible = true;
+            this.IsAddControlVisible = false;
+        }
+
     }
 }
